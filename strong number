@@ -1,0 +1,28 @@
+#include<stdio.h>
+int str(int);
+int main()
+{
+    int a;
+    scanf("%d",a);
+    str(a);
+    
+}
+int str(int b)
+{
+    int c,d,i,f=1,e=0;
+    c=b;
+    while(c!=0)
+    {
+        d=c%10;
+        for(i=1;i<=d;i++)
+        {
+            f=f*i;
+        }
+        e=e+f;
+        c=c/10;
+        f=1;
+    }
+    if(e==b){
+        printf("Strong number");
+    }
+}
